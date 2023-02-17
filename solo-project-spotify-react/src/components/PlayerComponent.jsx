@@ -30,13 +30,13 @@ function PlayerComponent() {
       <div className="progress-controller">
         <div className="control-buttons mt-4">
           <i className="fas fa-random"></i>
-          <i className="fas fa-step-backward" onclick="onClickPrev()"></i>
+          <i className="fas fa-step-backward" onClick="onClickPrev()"></i>
           <i
             id="play-pause-btn"
-            onclick="onPlayPause(event)"
+            onClick="onPlayPause(event)"
             className="play-pause fas fa-play"
           ></i>
-          <i className="fas fa-step-forward" onclick="onClickNext()"></i>
+          <i className="fas fa-step-forward" onClick="onClickNext()"></i>
           <i className="fas fa-undo-alt"></i>
         </div>
         <div className="progress-container mt-n4">

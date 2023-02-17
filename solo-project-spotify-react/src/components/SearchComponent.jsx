@@ -9,7 +9,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 const SearchComponent = () => {
   const searchData = useSelector((state) => state.search.searchData);
   const dispatch = useDispatch();
-  const searchValue = useSelector((state) => state.search.searchQuery);
+  const searchValue = useSelector((state) => state.search.searchquery);
   const navigate = useNavigate();
   const searchFunction = (e) => {
     navigate("/search");

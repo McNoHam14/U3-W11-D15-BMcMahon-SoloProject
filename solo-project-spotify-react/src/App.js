@@ -4,6 +4,7 @@ import SideBarComponent from "./components/SideBarComponent";
 import HeaderComponent from "./components/HeaderComponent";
 import SearchComponent from "./components/SearchComponent";
 import PlayerComponent from "./components/PlayerComponent";
+import MainComponent from "./components/MainComponent";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
     <BrowserRouter>
       <SideBarComponent />
       <HeaderComponent />
-      <SearchComponent />
+      <MainComponent />
+      {/* <SearchComponent /> */}
       <PlayerComponent />
       {/* <Routes>
         <Route path="/search" element={<SearchComponent />} />

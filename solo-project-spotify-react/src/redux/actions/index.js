@@ -1,10 +1,10 @@
 export const FETCH_SEARCH = "FETCH_SEARCH";
 export const SET_SEARCH = "SET_SEARCH";
 
-export const setSearch = (searchQuery) => {
+export const setSearch = (searchquery) => {
   return {
     type: SET_SEARCH,
-    payload: searchQuery,
+    payload: searchquery,
   };
 };
 

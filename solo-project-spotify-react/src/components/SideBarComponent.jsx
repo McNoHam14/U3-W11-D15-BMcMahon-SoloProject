@@ -7,7 +7,7 @@ const SideBarComponent = () => {
     <>
       <div className="container-fluid page-wrapper">
         <div className="row">
-          <div className="col-2  d-block row">
+          <div className="col-2 d-block row">
             <div className="container-fluid d-block side-bar ">
               <img className="logo col-10 my-3 mt-4" src={logo} alt="" />
               <button className="my-2 side-bar-text d-block align-items-center">
@@ -16,7 +16,7 @@ const SideBarComponent = () => {
               </button>
               <button
                 className="my-2 side-bar-text side-bar-search d-block"
-                onclick="searchBarVisible()"
+                onClick="searchBarVisible()"
               >
                 <i className="bi bi-search"></i>
                 Search
