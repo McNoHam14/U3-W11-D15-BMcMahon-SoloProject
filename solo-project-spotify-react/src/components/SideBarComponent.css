@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  color: white;
+  height: 100vh;
+}
+.side-bar {
+  background-color: black;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  height: 40vh;
+}
+
+.side-bar-text {
+  background-color: black;
+  opacity: 0.5;
+  border: none;
+  color: white;
+}
+
+.side-bar i {
+  margin-right: 5px;
+  font-size: 25px;
+}
+
+.side-bar-text:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+hr {
+  background-color: rgba(245, 245, 245, 0.192);
+}
