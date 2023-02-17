@@ -4,16 +4,17 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { setSearch } from "../redux/actions";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
 const SearchComponent = () => {
   const searchData = useSelector((state) => state.search.searchData);
   const dispatch = useDispatch();
   const searchValue = useSelector((state) => state.search.searchQuery);
   const navigate = useNavigate();
-  //   const searchFunction = (e) => {
-  //     navigate("/search");
-  //     dispatch(setSearch(e.target.value));
-  //   };
+  const searchFunction = (e) => {
+    navigate("/search");
+    dispatch(setSearch(e.target.value));
+  };
 
   useEffect(() => {
     dispatch(fetchSearch(searchValue));
@@ -21,20 +22,24 @@ const SearchComponent = () => {
 
   return (
     <>
-      <h1>Hello</h1>
-      {/* <input
-        type="text"
-        id="search"
-        placeholder="search here"
-        onChange={(e) => searchFunction(e)}
-      /> */}
-      <div>
-        {searchData.data.slice(0, 20).map((album) => (
-          <div>
-            <h4>{album.artist.name}</h4>
-          </div>
-        ))}
-      </div>
+      <Container>
+        <input
+          type="text"
+          id="search"
+          placeholder="search here"
+          onChange={(e) => searchFunction(e)}
+        />
+        <Row>
+          {searchData.data.slice(0, 20).map((album) => (
+            <Col xs={3}>
+              <Card>
+                <h4>{album.artist.name}</h4>
+                <img src={album.artist.picture} alt="image of artist" />
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </>
   );
 };
