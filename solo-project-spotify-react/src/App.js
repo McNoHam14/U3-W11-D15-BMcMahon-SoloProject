@@ -10,14 +10,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <SideBarComponent />
       <HeaderComponent />
-      <MainComponent />
-      {/* <SearchComponent /> */}
-      <PlayerComponent />
-      {/* <Routes>
+      <div className="container-fluid d-flex page-wrapper mt-5">
+        <SideBarComponent />
+        <MainComponent />
+        {/* <SearchComponent /> */}
+        <PlayerComponent />
+        {/* <Routes>
         <Route path="/search" element={<SearchComponent />} />
       </Routes> */}
+      </div>
     </BrowserRouter>
   );
 }

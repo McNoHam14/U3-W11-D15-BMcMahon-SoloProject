@@ -34,7 +34,7 @@ const SearchComponent = () => {
             <Col xs={3}>
               <Card>
                 <h4>{album.artist.name}</h4>
-                <img src={album.artist.picture} alt="image of artist" />
+                <img src={album.artist.picture} alt="artist pic" />
               </Card>
             </Col>
           ))}

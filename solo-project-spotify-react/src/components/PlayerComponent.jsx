@@ -1,7 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "./PlayerComponent.css";
 
 function PlayerComponent() {
+  const selectedMusic = useSelector((state) => state.selected);
+
   return (
     <div className="col-12 music-player">
       <div className="song-bar">
